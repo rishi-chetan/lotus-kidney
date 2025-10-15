@@ -1,0 +1,50 @@
+[
+  {
+    "id": "svc1",
+    "title": "Kidney Stone Management",
+    "category": "Nephrology",
+    "shortDescription": "Diagnosis and minimally invasive treatment for kidney stones.",
+    "fullDescription": "We evaluate stone composition, provide pain control, and use evidence-based approaches including hydration plans, medical expulsive therapy, and referrals for ESWL/URS when necessary.",
+    "tags": ["stones", "nephrology", "pain"]
+  },
+  {
+    "id": "svc2",
+    "title": "Chronic Kidney Disease (CKD) Care",
+    "category": "Nephrology",
+    "shortDescription": "Comprehensive management for CKD stages 1–5.",
+    "fullDescription": "Dietary counseling, medication optimization, risk factor control (BP, sugar), and dialysis planning when appropriate. Regular monitoring to slow disease progression.",
+    "tags": ["CKD", "diet", "hypertension"]
+  },
+  {
+    "id": "svc3",
+    "title": "Male Fertility & Andrology",
+    "category": "Andrology",
+    "shortDescription": "Assessment and treatment for male fertility concerns.",
+    "fullDescription": "We investigate semen parameters, hormonal profiles, and lifestyle factors. Care plans include medical management, counseling, and referrals for advanced reproductive techniques.",
+    "tags": ["fertility", "andrology"]
+  },
+  {
+    "id": "svc4",
+    "title": "Prostate Health",
+    "category": "Urology",
+    "shortDescription": "Evaluation and management of BPH and prostate conditions.",
+    "fullDescription": "Assessment includes symptom scoring, PSA evaluation, imaging when needed, and shared decision-making about medical or procedural interventions.",
+    "tags": ["prostate", "BPH"]
+  },
+  {
+    "id": "svc5",
+    "title": "Urinary Tract Infections (UTI)",
+    "category": "Urology",
+    "shortDescription": "Timely diagnosis and treatment for UTIs.",
+    "fullDescription": "We use targeted antibiotic therapy based on local resistance patterns and provide preventive strategies to reduce recurrence.",
+    "tags": ["UTI", "urology"]
+  },
+  {
+    "id": "svc6",
+    "title": "Hypertension & Kidney Risk",
+    "category": "Nephrology",
+    "shortDescription": "Blood pressure optimization for kidney protection.",
+    "fullDescription": "Medication review, lifestyle guidance, and monitoring to protect kidney function and cardiovascular health.",
+    "tags": ["hypertension", "risk", "kidney"]
+  }
+]

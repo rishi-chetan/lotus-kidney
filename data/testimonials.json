@@ -1,0 +1,18 @@
+[
+  {
+    "id": "t1",
+    "name": "Rahul S.",
+    "content": "The teleconsultation was smooth and the doctor explained everything clearly.",
+    "image": "/placeholder.svg?height=48&width=48"
+  },
+  {
+    "id": "t2",
+    "name": "Priya K.",
+    "content": "Compassionate team and thorough care. Highly recommend!"
+  },
+  {
+    "id": "t3",
+    "name": "Anita M.",
+    "content": "From booking to follow-up, the experience was excellent."
+  }
+]

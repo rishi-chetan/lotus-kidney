@@ -1,0 +1,14 @@
+[
+  { "id": "l1", "label": "Call Clinic", "href": "tel:+1234567890", "external": false, "variant": "primary" },
+  { "id": "l2", "label": "WhatsApp", "href": "https://wa.me/1234567890", "external": true, "variant": "outline" },
+  {
+    "id": "l3",
+    "label": "Find us on Maps",
+    "href": "https://maps.google.com/?q=Lotus%20Kidney",
+    "external": true,
+    "variant": "outline"
+  },
+  { "id": "l4", "label": "Book Appointment", "href": "/appointments", "external": false, "variant": "primary" },
+  { "id": "l5", "label": "Teleconsultation", "href": "/teleconsultation", "external": false, "variant": "outline" },
+  { "id": "l6", "label": "Patient Forms", "href": "/patient-info", "external": false, "variant": "outline" }
+]

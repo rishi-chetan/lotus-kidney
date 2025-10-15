@@ -1,0 +1,21 @@
+[
+  {
+    "id": "b1",
+    "slug": "ckd-basics",
+    "title": "Understanding Chronic Kidney Disease (CKD)",
+    "excerpt": "What CKD is, how it’s staged, and how to protect kidney function.",
+    "date": "2025-01-12",
+    "tags": ["CKD", "Kidney Health"],
+    "cover": "/placeholder.svg?height=400&width=800",
+    "content": "Chronic Kidney Disease involves gradual loss of kidney function. Early detection and lifestyle changes can slow progression. Work closely with your care team."
+  },
+  {
+    "id": "b2",
+    "slug": "hydration-and-stones",
+    "title": "Hydration and Kidney Stones",
+    "excerpt": "How fluids and diet impact stone risk and management.",
+    "date": "2025-02-05",
+    "tags": ["Kidney Stones", "Hydration"],
+    "content": "Increased fluid intake reduces stone formation risk. Specific dietary measures depend on stone type. Always personalize with your clinician."
+  }
+]
