@@ -23,8 +23,8 @@ export function Hero() {
         </div>
         <div className="relative">
           <img
-            src="/doctor-consulting-patient-in-clinic.jpg"
-            alt="Doctor consulting patient in clinic"
+            src="/bablu.png"
+            alt="Doctor"
             className="mx-auto w-full max-w-md rounded-xl border md:max-w-none"
           />
           <div
