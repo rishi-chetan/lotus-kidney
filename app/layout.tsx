@@ -14,6 +14,7 @@ const spectral = Spectral({
   subsets: ["latin"],
   variable: "--font-spectral",
   display: "swap",
+  weight: ["400", "600", "700"],
 })
 
 export const metadata: Metadata = {
