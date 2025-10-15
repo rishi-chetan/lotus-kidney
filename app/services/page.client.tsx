@@ -6,7 +6,7 @@ import { useMemo, useState } from "react"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
-export default function ServicesPageClient() {
+function ServicesPageClient() {
   const [query, setQuery] = useState("")
   const categories = Array.from(new Set(services.map((s) => s.category)))
   const [category, setCategory] = useState<string>("All")
@@ -60,3 +60,6 @@ export default function ServicesPageClient() {
     </div>
   )
 }
+
+export default ServicesPageClient
+export { ServicesPageClient }
