@@ -1,13 +1,41 @@
 import doctors from "@/data/doctors.json"
+import { Metadata } from "next"
+import { siteConfig } from "@/lib/seo-config"
+import { BreadcrumbSchema } from "@/components/structured-data"
 
-export const metadata = {
-  title: "About Us | Lotus Kidney & Andrology Center",
+export const metadata: Metadata = {
+  title: "About Dr. Nitesh Battala | Best Urologist in Hyderabad | DrNB Urology",
+  description: "Dr. Nitesh Battala - DrNB Urology, MS Surgery, MBBS. Expert urologist, andrologist & robotic surgeon with 1800+ procedures. Consultant at Mediciti Hospitals, Medinova Hospital. Specialist in kidney stones, prostate, male infertility, renal transplant.",
+  keywords: [
+    "Dr Nitesh Battala",
+    "best urologist in Hyderabad",
+    "urologist in Uppal",
+    "kidney specialist Hyderabad",
+    "robotic urologist",
+    "renal transplant surgeon",
+  ],
+  alternates: {
+    canonical: `${siteConfig.url}/about`,
+  },
+  openGraph: {
+    title: "About Dr. Nitesh Battala | Best Urologist in Hyderabad",
+    description: "Expert urologist with 1800+ procedures. Specializing in kidney stones, prostate care, male infertility, and robotic surgery.",
+    url: `${siteConfig.url}/about`,
+    images: [siteConfig.ogImage],
+  },
 }
 
 export default function AboutPage() {
   return (
-    <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
-      <h1 className="text-4xl font-bold mb-8">About Dr. Battala Nitesh</h1>
+    <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: siteConfig.url },
+          { name: "About Dr. Nitesh Battala", url: `${siteConfig.url}/about` },
+        ]}
+      />
+      <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
+        <h1 className="text-4xl font-bold mb-8">About Dr. Battala Nitesh</h1>
 
       <section className="mb-12">
         <div className="space-y-6">
@@ -160,6 +188,7 @@ export default function AboutPage() {
           </div>
         </section>
       </div>
-    </div>
+      </div>
+    </>
   )
 }

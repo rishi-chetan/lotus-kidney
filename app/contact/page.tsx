@@ -1,12 +1,39 @@
 import { ContactForm } from "@/components/forms/contact-form"
+import { Metadata } from "next"
+import { siteConfig } from "@/lib/seo-config"
+import { BreadcrumbSchema } from "@/components/structured-data"
 
-export const metadata = {
-  title: "Contact Us | Lotus Kidney & Andrology Center",
+export const metadata: Metadata = {
+  title: "Contact Us | Lotus Kidney & Andrology Center Uppal Hyderabad",
+  description: "Visit our urology clinic at Uppal, Hyderabad. Call +91 70930 70434 | WhatsApp | Email: lkac@gmail.com. Open Mon-Sat, 9 AM - 6 PM. Best urologist near Medchal, LB Nagar, Secunderabad.",
+  keywords: [
+    "urologist contact Hyderabad",
+    "kidney specialist Uppal",
+    "urology clinic Hyderabad",
+    "urologist near me",
+    "kidney clinic Uppal",
+  ],
+  alternates: {
+    canonical: `${siteConfig.url}/contact`,
+  },
+  openGraph: {
+    title: "Contact Us | Lotus Kidney & Andrology Center Hyderabad",
+    description: "Get in touch with our expert urology team. Visit us at Uppal, Hyderabad or call for consultation.",
+    url: `${siteConfig.url}/contact`,
+    images: [siteConfig.ogImage],
+  },
 }
 
 export default function ContactPage() {
   return (
-    <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
+    <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: siteConfig.url },
+          { name: "Contact Us", url: `${siteConfig.url}/contact` },
+        ]}
+      />
+      <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
       <div className="grid gap-10 md:grid-cols-2">
         <div className="space-y-4">
           <h1 className="text-3xl font-bold">Get in touch</h1>
@@ -69,5 +96,6 @@ export default function ContactPage() {
         </div>
       </div>
     </div>
+    </>
   )
 }

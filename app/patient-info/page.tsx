@@ -1,14 +1,35 @@
 import faqs from "@/data/faqs.json"
 // import forms from "@/data/forms.json"
 import { FAQAccordion } from "@/components/faq-accordion"
+import { Metadata } from "next"
+import { siteConfig } from "@/lib/seo-config"
+import { FAQSchema, BreadcrumbSchema } from "@/components/structured-data"
 
-export const metadata = {
-  title: "Patient Info | Lotus Kidney & Andrology Center",
+export const metadata: Metadata = {
+  title: "Patient Information | First Visit Guide | Lotus Kidney & Andrology Center",
+  description: "Patient resources, FAQs, and first visit guide for Lotus Kidney & Andrology Center. Learn about preparation, insurance, and what to expect during your visit to our urology clinic in Hyderabad.",
+  keywords: [
+    "patient information urology",
+    "first visit urologist",
+    "urology FAQs",
+    "kidney specialist visit guide",
+  ],
+  alternates: {
+    canonical: `${siteConfig.url}/patient-info`,
+  },
 }
 
 export default function PatientInfoPage() {
   return (
-    <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
+    <>
+      <FAQSchema faqs={faqs.map(faq => ({ question: faq.question, answer: faq.answer }))} />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: siteConfig.url },
+          { name: "Patient Information", url: `${siteConfig.url}/patient-info` },
+        ]}
+      />
+      <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
       <h1 className="mb-6 text-3xl font-bold w-fit">Patient Resources</h1>
       <section className="grid gap-6 md:grid-cols-2">
         <div className="space-y-4">
@@ -51,5 +72,6 @@ export default function PatientInfoPage() {
         </ul>
       </section> */}
     </div>
+    </>
   )
 }

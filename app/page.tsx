@@ -7,9 +7,32 @@ import { TestimonialCard } from "@/components/testimonial-card"
 import { ScheduleTable } from "@/components/schedule/schedule-table"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { Metadata } from "next"
+import { siteConfig } from "@/lib/seo-config"
 
-export const metadata = {
-  title: "Home | Lotus Kidney & Andrology Center",
+export const metadata: Metadata = {
+  title: "Best Urologist in Hyderabad | Kidney Specialist | Dr. Nitesh Battala",
+  description: `${siteConfig.doctor.name} - Expert urologist in Hyderabad specializing in kidney stones, prostate treatment, male infertility, erectile dysfunction, robotic surgery & renal transplants. Book appointment at Uppal, Hyderabad. Available in Medchal, LB Nagar, Secunderabad.`,
+  keywords: [
+    "best urologist in Hyderabad",
+    "urologist near me",
+    "kidney specialist in Hyderabad",
+    "urologist in Uppal",
+    "kidney stone treatment Hyderabad",
+    "andrology specialist Hyderabad",
+    "male infertility treatment",
+    "prostate treatment Hyderabad",
+    "erectile dysfunction doctor",
+  ],
+  alternates: {
+    canonical: siteConfig.url,
+  },
+  openGraph: {
+    title: "Best Urologist in Hyderabad | Dr. Nitesh Battala | Lotus Kidney & Andrology Center",
+    description: "Expert kidney, urology and andrology care in Hyderabad. Book appointment for kidney stones, prostate, male infertility & more.",
+    url: siteConfig.url,
+    images: [siteConfig.ogImage],
+  },
 }
 
 export default function HomePage() {

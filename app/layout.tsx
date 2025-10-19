@@ -9,6 +9,8 @@ import { Suspense } from "react"
 import { ThemeProvider } from "@/components/providers/theme-provider"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
+import { MedicalBusinessSchema, DoctorSchema } from "@/components/structured-data"
+import { siteConfig } from "@/lib/seo-config"
 
 const spectral = Spectral({
   subsets: ["latin"],
@@ -18,19 +20,61 @@ const spectral = Spectral({
 })
 
 export const metadata: Metadata = {
-  title: "Lotus Kidney & Andrology Center",
-  description:
-    "Comprehensive kidney, urology, and andrology care. Teleconsultation, appointments, and patient resources.",
-  generator: "v0.app",
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: `${siteConfig.name} | Best Urologist in Hyderabad | Dr. Nitesh Battala`,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  authors: [{ name: siteConfig.doctor.name }],
+  creator: siteConfig.name,
+  publisher: siteConfig.name,
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   openGraph: {
-    title: "Lotus Kidney & Andrology Center",
-    description:
-      "Comprehensive kidney, urology, and andrology care. Teleconsultation, appointments, and patient resources.",
-    url: "https://lotus-kidney.example.com",
     type: "website",
+    locale: "en_IN",
+    url: siteConfig.url,
+    title: `${siteConfig.name} | Best Urologist in Hyderabad`,
+    description: siteConfig.description,
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 630,
+        alt: `${siteConfig.name} Logo`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.name} | Best Urologist in Hyderabad`,
+    description: siteConfig.description,
+    images: [siteConfig.ogImage],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/LOTUS-LOGO.png",
+    apple: "/LOTUS-LOGO.png",
+  },
+  verification: {
+    // Add these later from Google Search Console
+    // google: "your-google-verification-code",
   },
 }
 
@@ -41,6 +85,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className={`${GeistSans.variable} ${spectral.variable}`}>
+      <head>
+        <MedicalBusinessSchema />
+        <DoctorSchema />
+      </head>
       <body className="font-sans antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Suspense fallback={<div>Loading...</div>}>
