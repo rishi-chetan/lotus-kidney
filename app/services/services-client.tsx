@@ -5,8 +5,10 @@ import { ServiceCard } from "@/components/cards/service-card"
 import { useMemo, useState } from "react"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import { useI18n } from "@/components/providers/i18n-provider"
 
 export function ServicesPageClient() {
+  const { t } = useI18n()
   const [query, setQuery] = useState("")
   const categories = Array.from(new Set(services.map((s) => s.category)))
   const [category, setCategory] = useState<string>("All")
@@ -25,7 +27,7 @@ export function ServicesPageClient() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
-      <h1 className="mb-6 text-3xl font-bold">Services</h1>
+      <h1 className="mb-6 text-3xl font-bold">{t('Services.pageTitle')}</h1>
       <div className="mb-6 grid gap-4 md:grid-cols-3">
         <div className="grid gap-2 md:col-span-2">
           <Label htmlFor="search">Search</Label>
@@ -45,7 +47,7 @@ export function ServicesPageClient() {
             onChange={(e) => setCategory(e.target.value)}
             aria-label="Filter services by category"
           >
-            <option>All</option>
+            <option>{t('Services.allServices')}</option>
             {categories.map((c) => (
               <option key={c}>{c}</option>
             ))}

@@ -1,6 +1,11 @@
+"use client"
+
 import Link from "next/link"
+import { useI18n } from "@/components/providers/i18n-provider"
 
 export function SiteFooter() {
+  const { t } = useI18n()
+  
   return (
     <footer className="border-t bg-card">
       <div className="mx-auto grid max-w-6xl gap-6 px-4 py-10 md:grid-cols-4">
@@ -9,19 +14,19 @@ export function SiteFooter() {
             <img src="/logo.png" alt="Lotus Kidney & Andrology Logo" className="h-8 w-auto" />
             <span>Lotus Kidney & Andrology Center</span>
           </div>
-          <p className="text-sm text-muted-foreground">Compassionate care in urology, and andrology.</p>
+          <p className="text-sm text-muted-foreground">{t('Footer.tagline')}</p>
         </div>
         <div>
-          <h4 className="mb-3 font-semibold">Quick Links</h4>
+          <h4 className="mb-3 font-semibold">{t('Footer.quickLinks')}</h4>
           <ul className="space-y-2 text-sm">
             <li>
               <Link className="hover:underline" href="/services">
-                Services
+                {t('Footer.services')}
               </Link>
             </li>
             <li>
               <Link className="hover:underline" href="/appointments">
-                Appointments
+                {t('Footer.appointments')}
               </Link>
             </li>
             {/* Teleconsultation - Coming Soon */}
@@ -32,13 +37,13 @@ export function SiteFooter() {
             </li> */}
             <li>
               <Link className="hover:underline" href="/patient-info">
-                Patient Info
+                {t('Footer.patientInfo')}
               </Link>
             </li>
           </ul>
         </div>
         <div>
-          <h4 className="mb-3 font-semibold">Contact</h4>
+          <h4 className="mb-3 font-semibold">{t('Footer.contactInfo')}</h4>
           <ul className="space-y-2 text-sm">
             <li>
               <a 
@@ -78,21 +83,16 @@ export function SiteFooter() {
           </ul>
         </div>
         <div>
-          <h4 className="mb-3 font-semibold">Legal</h4>
+          <h4 className="mb-3 font-semibold">{t('Footer.legal')}</h4>
           <ul className="space-y-2 text-sm">
             <li>
               <Link className="hover:underline" href="/privacy">
-                Privacy Policy
+                {t('Footer.privacy')}
               </Link>
             </li>
             <li>
               <Link className="hover:underline" href="/terms">
-                Terms & Conditions
-              </Link>
-            </li>
-            <li>
-              <Link className="hover:underline" href="/links">
-                Quick Links Page
+                {t('Footer.terms')}
               </Link>
             </li>
           </ul>

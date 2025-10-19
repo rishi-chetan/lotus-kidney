@@ -1,31 +1,12 @@
+"use client"
+
 import doctors from "@/data/doctors.json"
-import { Metadata } from "next"
 import { siteConfig } from "@/lib/seo-config"
 import { BreadcrumbSchema } from "@/components/structured-data"
-
-export const metadata: Metadata = {
-  title: "About Dr. Nitesh Battala | Best Urologist in Hyderabad | DrNB Urology",
-  description: "Dr. Nitesh Battala - DrNB Urology, MS Surgery, MBBS. Expert urologist, andrologist & robotic surgeon with 1800+ procedures. Consultant at Mediciti Hospitals, Medinova Hospital. Specialist in kidney stones, prostate, male infertility, renal transplant.",
-  keywords: [
-    "Dr Nitesh Battala",
-    "best urologist in Hyderabad",
-    "urologist in Uppal",
-    "kidney specialist Hyderabad",
-    "robotic urologist",
-    "renal transplant surgeon",
-  ],
-  alternates: {
-    canonical: `${siteConfig.url}/about`,
-  },
-  openGraph: {
-    title: "About Dr. Nitesh Battala | Best Urologist in Hyderabad",
-    description: "Expert urologist with 1800+ procedures. Specializing in kidney stones, prostate care, male infertility, and robotic surgery.",
-    url: `${siteConfig.url}/about`,
-    images: [siteConfig.ogImage],
-  },
-}
+import { useI18n } from "@/components/providers/i18n-provider"
 
 export default function AboutPage() {
+  const { t } = useI18n();
   return (
     <>
       <BreadcrumbSchema
@@ -35,7 +16,7 @@ export default function AboutPage() {
         ]}
       />
       <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
-        <h1 className="text-4xl font-bold mb-8">About Dr. Battala Nitesh</h1>
+        <h1 className="text-4xl font-bold mb-8">{t('About.pageTitle')}</h1>
 
       <section className="mb-12">
         <div className="space-y-6">
@@ -65,18 +46,15 @@ export default function AboutPage() {
 
       <div className="space-y-10">
         <section>
-          <h2 className="text-2xl font-bold mb-4">Career Objective</h2>
+          <h2 className="text-2xl font-bold mb-4">{t('About.careerObjective')}</h2>
           <p className="text-muted-foreground leading-relaxed">
-            To establish and grow a patient-centered urology practice that offers advanced, evidence-based treatments 
-            with a focus on minimally invasive and robotic surgeries. My goal is to provide compassionate, high-quality 
-            care for a wide spectrum of urological conditions while building lasting trust within the community and 
-            contributing to improved health outcomes.
+            {t('About.careerObjectiveText')}
           </p>
         </section>
 
         <section className="grid md:grid-cols-2 gap-8">
           <div>
-            <h2 className="text-2xl font-bold mb-4">Professional Experience</h2>
+            <h2 className="text-2xl font-bold mb-4">{t('About.professionalExperience')}</h2>
             <div className="space-y-4 text-muted-foreground">
               <div className="border-l-4 border-primary pl-4">
                 <h3 className="font-semibold text-foreground">DrNB Urology Training</h3>
@@ -94,7 +72,7 @@ export default function AboutPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold mb-4">Where to Find Me?</h2>
+            <h2 className="text-2xl font-bold mb-4">{t('About.whereToFindMe')}</h2>
             <div className="space-y-4 text-muted-foreground">
               <div className="border-l-4 border-primary pl-4">
                 <h3 className="font-semibold text-foreground">Medinova Hospital</h3>
@@ -113,69 +91,68 @@ export default function AboutPage() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold mb-4">Clinical Expertise</h2>
+          <h2 className="text-2xl font-bold mb-4">{t('About.clinicalExpertise')}</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-3">
-              <h3 className="font-semibold text-lg">Surgical Experience</h3>
+              <h3 className="font-semibold text-lg">{t('About.surgicalExperience')}</h3>
               <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                <li>1800+ advanced urological procedures performed</li>
-                <li>PCNL, RIRS, URSL procedures</li>
-                <li>TURP, TURBT surgeries</li>
-                <li>Laparoscopic and open renal surgeries</li>
-                <li>Pyeloplasties and urethroplasties</li>
-                <li>VVF repairs and reconstructive procedures</li>
+                <li>{t('About.surgicalExperienceItem1')}</li>
+                <li>{t('About.surgicalExperienceItem2')}</li>
+                <li>{t('About.surgicalExperienceItem3')}</li>
+                <li>{t('About.surgicalExperienceItem4')}</li>
+                <li>{t('About.surgicalExperienceItem5')}</li>
+                <li>{t('About.surgicalExperienceItem6')}</li>
               </ul>
             </div>
             <div className="space-y-3">
-              <h3 className="font-semibold text-lg">Specialized Training</h3>
+              <h3 className="font-semibold text-lg">{t('About.specializedTraining')}</h3>
               <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                <li>Robotic surgery console surgeon certification (Intuitive Surgical)</li>
-                <li>Renal transplant team member with extensive exposure</li>
-                <li>Urethroplasty techniques including buccal mucosal grafts</li>
-                <li>Vascular anastomosis and post-transplant care</li>
+                <li>{t('About.specializedTrainingItem1')}</li>
+                <li>{t('About.specializedTrainingItem2')}</li>
+                <li>{t('About.specializedTrainingItem3')}</li>
+                <li>{t('About.specializedTrainingItem4')}</li>
               </ul>
             </div>
           </div>
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold mb-4">Academic Involvement</h2>
+          <h2 className="text-2xl font-bold mb-4">{t('About.academicInvolvement')}</h2>
           <div className="space-y-4">
             <div>
-              <h3 className="font-semibold text-lg mb-2">Professional Memberships</h3>
+              <h3 className="font-semibold text-lg mb-2">{t('About.professionalMemberships')}</h3>
               <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                <li>American Urological Society</li>
-                <li>Urological Society of India</li>
-                <li>Urological Society of South Zone</li>
-                <li>Urological Society of Hyderabad</li>
+                <li>{t('About.membershipItem1')}</li>
+                <li>{t('About.membershipItem2')}</li>
+                <li>{t('About.membershipItem3')}</li>
+                <li>{t('About.membershipItem4')}</li>
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold text-lg mb-2">Research & Publications</h3>
+              <h3 className="font-semibold text-lg mb-2">{t('About.researchPublications')}</h3>
               <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                <li>Multiple paper presentations at national conferences (USICON, SOGUS)</li>
-                <li>Published research on renal transplantation techniques</li>
-                <li>Poster presentations on rare urological cases</li>
-                <li>Active participant in CMEs, conferences, and surgical workshops</li>
+                <li>{t('About.researchItem1')}</li>
+                <li>{t('About.researchItem2')}</li>
+                <li>{t('About.researchItem3')}</li>
+                <li>{t('About.researchItem4')}</li>
               </ul>
             </div>
           </div>
         </section>
 
         <section className="bg-secondary/30 p-6 rounded-lg">
-          <h2 className="text-2xl font-bold mb-4">Our Mission & Values</h2>
+          <h2 className="text-2xl font-bold mb-4">{t('About.missionValues')}</h2>
           <div className="grid md:grid-cols-2 gap-6 items-center">
             <div>
               <p className="text-muted-foreground mb-4">
-                Founded to provide comprehensive kidney, urology, and andrology services under one roof, we combine
-                expertise with empathy to deliver the highest standard of care.
+                {t('About.missionText')}
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                <li>Compassionate, patient-centered care</li>
-                <li>Evidence-based medicine and continuous learning</li>
-                <li>Advanced minimally invasive and robotic surgical techniques</li>
-                <li>Accessibility and convenience for all patients</li>
-                <li>Building lasting trust within the community</li>
+                <li>{t('About.valueItem1')}</li>
+                <li>{t('About.valueItem2')}</li>
+                <li>{t('About.valueItem3')}</li>
+                <li>{t('About.valueItem4')}</li>
+                <li>{t('About.valueItem5')}</li>
               </ul>
             </div>
             <div>

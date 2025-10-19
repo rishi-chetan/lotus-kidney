@@ -1,0 +1,254 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "patientInfo": "Patient Info",
+    "appointments": "Appointments",
+    "blog": "Blog",
+    "contact": "Contact",
+    "book": "Book",
+    "bookAppointment": "Book Appointment"
+  },
+  "LanguageToggle": {
+    "switchTo": "తెలుగు"
+  },
+  "Hero": {
+    "heading": "Kidney, Urology, and Andrology Care You Can Trust",
+    "description": "Evidence-based treatment with compassion. In-clinic consultations available.",
+    "bookAppointment": "Book Appointment",
+    "aboutDoctor": "About Doctor"
+  },
+  "Home": {
+    "ourMission": "Our Mission",
+    "missionDescription": "Delivering compassionate, evidence-based kidney, urology, and andrology care with a focus on long-term wellbeing.",
+    "featuredServices": "Featured Services",
+    "viewAll": "View all",
+    "whatPatientsSay": "What Patients Say",
+    "readMoreStories": "Read more stories"
+  },
+  "About": {
+    "pageTitle": "About Dr. Battala Nitesh",
+    "careerObjective": "Career Objective",
+    "careerObjectiveText": "To establish and grow a patient-centered urology practice that offers advanced, evidence-based treatments with a focus on minimally invasive and robotic surgeries. My goal is to provide compassionate, high-quality care for a wide spectrum of urological conditions while building lasting trust within the community and contributing to improved health outcomes.",
+    "professionalExperience": "Professional Experience",
+    "whereToFindMe": "Where to Find Me?",
+    "clinicalExpertise": "Clinical Expertise",
+    "surgicalExperience": "Surgical Experience",
+    "surgicalExperienceItem1": "1800+ advanced urological procedures performed",
+    "surgicalExperienceItem2": "PCNL, RIRS, URSL procedures",
+    "surgicalExperienceItem3": "TURP, TURBT surgeries",
+    "surgicalExperienceItem4": "Laparoscopic and open renal surgeries",
+    "surgicalExperienceItem5": "Pyeloplasties and urethroplasties",
+    "surgicalExperienceItem6": "VVF repairs and reconstructive procedures",
+    "specializedTraining": "Specialized Training",
+    "specializedTrainingItem1": "Robotic surgery console surgeon certification (Intuitive Surgical)",
+    "specializedTrainingItem2": "Renal transplant team member with extensive exposure",
+    "specializedTrainingItem3": "Urethroplasty techniques including buccal mucosal grafts",
+    "specializedTrainingItem4": "Vascular anastomosis and post-transplant care",
+    "academicInvolvement": "Academic Involvement",
+    "professionalMemberships": "Professional Memberships",
+    "membershipItem1": "American Urological Society",
+    "membershipItem2": "Urological Society of India",
+    "membershipItem3": "Urological Society of South Zone",
+    "membershipItem4": "Urological Society of Hyderabad",
+    "researchPublications": "Research & Publications",
+    "researchItem1": "Multiple paper presentations at national conferences (USICON, SOGUS)",
+    "researchItem2": "Published research on renal transplantation techniques",
+    "researchItem3": "Poster presentations on rare urological cases",
+    "researchItem4": "Active participant in CMEs, conferences, and surgical workshops",
+    "missionValues": "Our Mission & Values",
+    "missionText": "Founded to provide comprehensive kidney, urology, and andrology services under one roof, we combine expertise with empathy to deliver the highest standard of care.",
+    "valueItem1": "Compassionate, patient-centered care",
+    "valueItem2": "Evidence-based medicine and continuous learning",
+    "valueItem3": "Advanced minimally invasive and robotic surgical techniques",
+    "valueItem4": "Accessibility and convenience for all patients",
+    "valueItem5": "Building lasting trust within the community"
+  },
+  "Services": {
+    "pageTitle": "Our Services",
+    "pageDescription": "Comprehensive kidney, urology, and andrology treatments with advanced minimally invasive and robotic surgical options.",
+    "allServices": "All Services",
+    "category": {
+      "Urology": "Urology",
+      "Andrology": "Andrology",
+      "UroOncology": "Uro-Oncology",
+      "ReconstructiveUrology": "Reconstructive Urology",
+      "PediatricUrology": "Pediatric Urology",
+      "TransplantSurgery": "Transplant Surgery"
+    }
+  },
+  "PatientInfo": {
+    "pageTitle": "Patient Resources",
+    "firstVisitGuide": "First Visit Guide",
+    "firstVisitItem1": "Arrive 10 minutes early for registration",
+    "firstVisitItem2": "Bring previous reports and medication list",
+    "firstVisitItem3": "Insurance card and identification",
+    "procedurePreparation": "Procedure Preparation",
+    "procedurePreparationText": "Follow your doctor's instructions. For ultrasound or imaging, you may be asked to fast or hydrate accordingly.",
+    "insurancePayment": "Insurance & Payment",
+    "insurancePaymentText": "We accept major insurance providers and offer transparent, upfront pricing for self-pay patients.",
+    "faqs": "FAQs"
+  },
+  "Appointments": {
+    "pageTitle": "Book an Appointment",
+    "pageDescription": "Schedule your consultation with Dr. Nitesh Battala. We offer in-clinic appointments and convenient scheduling.",
+    "formTitle": "Schedule Your Visit",
+    "formDescription": "Fill out the form below and we'll confirm your appointment via phone or WhatsApp.",
+    "name": "Full Name",
+    "namePlaceholder": "Enter your full name",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "phone": "Phone Number",
+    "phonePlaceholder": "+91 9876543210",
+    "date": "Preferred Date",
+    "time": "Preferred Time",
+    "reason": "Reason for Visit",
+    "reasonPlaceholder": "Briefly describe your concern",
+    "submit": "Submit Appointment Request",
+    "submitting": "Submitting...",
+    "successMessage": "Appointment request submitted successfully! We'll contact you soon to confirm.",
+    "errorMessage": "Failed to submit appointment request. Please try again or call us directly."
+  },
+  "Contact": {
+    "pageTitle": "Contact Us",
+    "pageDescription": "Get in touch with Lotus Kidney & Andrology Center for appointments, inquiries, or general information.",
+    "formTitle": "Send us a Message",
+    "formDescription": "Have a question? Fill out the form and we'll get back to you as soon as possible.",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "phone": "Phone",
+    "phonePlaceholder": "+91 9876543210",
+    "message": "Message",
+    "messagePlaceholder": "How can we help you?",
+    "submit": "Send Message",
+    "submitting": "Sending...",
+    "successMessage": "Message sent successfully! We'll respond soon.",
+    "errorMessage": "Failed to send message. Please try again.",
+    "clinicInfo": "Clinic Information",
+    "address": "Address",
+    "clinicHours": "Clinic Hours",
+    "hours": "6:00 PM – 9:00 PM",
+    "days": "Monday to Saturday",
+    "emergencyNote": "For emergencies, please call immediately"
+  },
+  "Testimonials": {
+    "pageTitle": "Patient Testimonials",
+    "pageDescription": "Read what our patients say about their experience at Lotus Kidney & Andrology Center.",
+    "heading": "What Our Patients Say"
+  },
+  "Blog": {
+    "pageTitle": "Health Blog",
+    "pageDescription": "Expert insights on kidney health, urology, and andrology from Dr. Nitesh Battala.",
+    "latestArticles": "Latest Articles",
+    "readMore": "Read more",
+    "backToBlog": "Back to Blog",
+    "relatedArticles": "Related Articles"
+  },
+  "Links": {
+    "pageTitle": "Quick Links",
+    "usefulLinks": "Useful Links",
+    "externalResources": "External Resources"
+  },
+  "Footer": {
+    "tagline": "Compassionate care in urology, and andrology.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "appointments": "Appointments",
+    "patientInfo": "Patient Info",
+    "contactInfo": "Contact Info",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "followUs": "Follow Us",
+    "legal": "Legal",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "copyright": "© 2024 Lotus Kidney & Andrology Center. All rights reserved."
+  },
+  "Legal": {
+    "terms": {
+      "title": "Terms of Service",
+      "lastUpdated": "Last Updated",
+      "english": "English",
+      "telugu": "Telugu"
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "lastUpdated": "Last Updated",
+      "english": "English",
+      "telugu": "Telugu"
+    }
+  },
+  "FAQs": {
+    "q1": "Do I need an appointment or can I walk in?",
+    "a1": "We recommend booking an appointment to reduce waiting time, but walk-ins are accepted based on availability.",
+    "q2": "How can I book an appointment?",
+    "a2": "You can call us, visit the clinic, or book online through our website or WhatsApp.",
+    "q3": "What are your clinic timings?",
+    "a3": "Our regular clinic hours are 6:00 PM – 9:00 PM, Monday to Saturday. Please call ahead to confirm timings on holidays or special occasions.",
+    "q4": "What specialties do you cover?",
+    "a4": "We specialize in kidney care, urology, and andrology — including treatment for kidney stones, urinary issues, male infertility, and sexual health concerns.",
+    "q5": "Are lab tests available at the clinic?",
+    "a5": "Yes, basic laboratory tests are available on-site. For advanced diagnostics, we partner with trusted labs.",
+    "q6": "How do I prepare for a kidney or andrology test?",
+    "a6": "Our staff will guide you depending on the test. Some tests may require fasting or full bladder preparation.",
+    "q7": "Do you provide treatment for male infertility?",
+    "a7": "Yes, we offer comprehensive evaluation and treatment options for male infertility and related conditions.",
+    "q8": "What payment methods do you accept?",
+    "a8": "We accept cash, UPI for all consultations and procedures."
+  },
+  "Validation": {
+    "required": "This field is required",
+    "invalidEmail": "Please enter a valid email address",
+    "invalidPhone": "Please enter a valid phone number",
+    "minLength": "Must be at least {min} characters",
+    "maxLength": "Must be no more than {max} characters"
+  },
+  "Common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Try again",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "more": "More",
+    "less": "Less"
+  },
+  "SEO": {
+    "home": {
+      "title": "Best Urologist in Hyderabad | Kidney Specialist | Dr. Nitesh Battala",
+      "description": "Dr. Nitesh Battala - Expert urologist in Hyderabad specializing in kidney stones, prostate treatment, male infertility, erectile dysfunction, robotic surgery & renal transplants. Book appointment at Uppal, Hyderabad. Available in Medchal, LB Nagar, Secunderabad."
+    },
+    "about": {
+      "title": "About Dr. Nitesh Battala | Best Urologist in Hyderabad | DrNB Urology",
+      "description": "Dr. Nitesh Battala - DrNB Urology, MS Surgery, MBBS. Expert urologist, andrologist & robotic surgeon with 1800+ procedures. Consultant at Mediciti Hospitals, Medinova Hospital. Specialist in kidney stones, prostate, male infertility, renal transplant."
+    },
+    "services": {
+      "title": "Urology & Andrology Services | Kidney Stone Treatment | Hyderabad",
+      "description": "Comprehensive urology and andrology services including kidney stone treatment, prostate care, male infertility treatment, robotic surgery, and renal transplants in Hyderabad."
+    },
+    "patientInfo": {
+      "title": "Patient Information | First Visit Guide | Lotus Kidney & Andrology Center",
+      "description": "Patient resources, FAQs, and first visit guide for Lotus Kidney & Andrology Center. Learn about preparation, insurance, and what to expect during your visit to our urology clinic in Hyderabad."
+    },
+    "appointments": {
+      "title": "Book Appointment | Dr. Nitesh Battala | Urologist in Hyderabad",
+      "description": "Schedule your consultation with Dr. Nitesh Battala, expert urologist in Hyderabad. Book online for kidney, urology, and andrology care. Available in Medchal, LB Nagar, Secunderabad."
+    },
+    "contact": {
+      "title": "Contact Us | Lotus Kidney & Andrology Center | Hyderabad",
+      "description": "Contact Lotus Kidney & Andrology Center in Hyderabad. Get directions, clinic hours, and schedule appointments for urology and andrology care."
+    },
+    "testimonials": {
+      "title": "Patient Testimonials | Lotus Kidney & Andrology Center",
+      "description": "Read patient reviews and testimonials for Lotus Kidney & Andrology Center and Dr. Nitesh Battala in Hyderabad."
+    }
+  }
+}
+

@@ -1,17 +1,22 @@
+"use client"
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import doctors from "@/data/doctors.json"
+import { useI18n } from "@/components/providers/i18n-provider"
 
 export function Hero() {
+  const { t } = useI18n();
+  
   return (
     <section className="relative overflow-hidden border-b bg-gradient-to-b from-background to-secondary">
       <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-12 md:grid-cols-2 md:py-20">
         <div className="space-y-6">
           <h1 className="text-balance text-4xl font-bold md:text-5xl">
-            Kidney, Urology, and Andrology Care You Can Trust
+            {t('Hero.heading')}
           </h1>
           <p className="text-pretty text-muted-foreground md:text-lg">
-            Evidence-based treatment with compassion. In-clinic consultations available.
+            {t('Hero.description')}
           </p>
           
           <div className="space-y-4 pt-4">
@@ -23,10 +28,10 @@ export function Hero() {
 
           <div className="flex flex-wrap gap-3">
             <Button asChild size="lg">
-              <Link href="/appointments">Book Appointment</Link>
+              <Link href="/appointments">{t('Hero.bookAppointment')}</Link>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <Link href="/about">About Doctor</Link>
+              <Link href="/about">{t('Hero.aboutDoctor')}</Link>
             </Button>
             {/* Teleconsultation - Coming Soon */}
             {/* <Button asChild size="lg" variant="outline">

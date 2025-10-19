@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { Suspense } from "react"
 
+import { I18nProvider } from "@/components/providers/i18n-provider"
 import { ThemeProvider } from "@/components/providers/theme-provider"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
@@ -68,11 +69,10 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  icons: {
-    icon: "/LOTUS-LOGO.png",
-    apple: "/LOTUS-LOGO.png",
-  },
-  // google-site-verification
+    icons: {
+      icon: "/favicon.png",
+      apple: "/favicon.png",
+    },
   verification: {
     google: "RE4uAPKhl0-TqTKY6ckx5l9h9zKK-qGeFxrV8M6lguo",
   },
@@ -90,13 +90,15 @@ export default function RootLayout({
         <DoctorSchema />
       </head>
       <body className="font-sans antialiased">
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Suspense fallback={<div>Loading...</div>}>
-            <SiteHeader />
-            <main className="min-h-[60vh]">{children}</main>
-            <SiteFooter />
-          </Suspense>
-        </ThemeProvider>
+        <I18nProvider>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <Suspense fallback={<div>Loading...</div>}>
+              <SiteHeader />
+              <main className="min-h-[60vh]">{children}</main>
+              <SiteFooter />
+            </Suspense>
+          </ThemeProvider>
+        </I18nProvider>
         <Analytics />
       </body>
     </html>

@@ -1,30 +1,12 @@
+"use client"
+
 import { ContactForm } from "@/components/forms/contact-form"
-import { Metadata } from "next"
 import { siteConfig } from "@/lib/seo-config"
 import { BreadcrumbSchema } from "@/components/structured-data"
-
-export const metadata: Metadata = {
-  title: "Contact Us | Lotus Kidney & Andrology Center Uppal Hyderabad",
-  description: "Visit our urology clinic at Uppal, Hyderabad. Call +91 70930 70434 | WhatsApp | Email: lkac@gmail.com. Open Mon-Sat, 9 AM - 6 PM. Best urologist near Medchal, LB Nagar, Secunderabad.",
-  keywords: [
-    "urologist contact Hyderabad",
-    "kidney specialist Uppal",
-    "urology clinic Hyderabad",
-    "urologist near me",
-    "kidney clinic Uppal",
-  ],
-  alternates: {
-    canonical: `${siteConfig.url}/contact`,
-  },
-  openGraph: {
-    title: "Contact Us | Lotus Kidney & Andrology Center Hyderabad",
-    description: "Get in touch with our expert urology team. Visit us at Uppal, Hyderabad or call for consultation.",
-    url: `${siteConfig.url}/contact`,
-    images: [siteConfig.ogImage],
-  },
-}
+import { useI18n } from "@/components/providers/i18n-provider"
 
 export default function ContactPage() {
+  const { t } = useI18n();
   return (
     <>
       <BreadcrumbSchema
@@ -36,10 +18,10 @@ export default function ContactPage() {
       <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
       <div className="grid gap-10 md:grid-cols-2">
         <div className="space-y-4">
-          <h1 className="text-3xl font-bold">Get in touch</h1>
+          <h1 className="text-3xl font-bold">{t('Contact.pageTitle')}</h1>
           <ul className="space-y-2 text-sm">
             <li>
-              <strong>Address:</strong>{" "}
+              <strong>{t('Contact.address')}:</strong>{" "}
               <a 
                 className="text-primary hover:underline" 
                 href="https://maps.app.goo.gl/1FDGzNzzPgBuaPoF7"
@@ -50,7 +32,7 @@ export default function ContactPage() {
               </a>
             </li>
             <li>
-              <strong>Phone:</strong>{" "}
+              <strong>{t('Contact.phone')}:</strong>{" "}
               <a className="text-primary hover:underline" href="tel:+917093070434">
                 +91 70930 70434
               </a>
@@ -60,12 +42,12 @@ export default function ContactPage() {
               </a>
             </li>
             <li>
-              <strong>Email:</strong>{" "}
+              <strong>{t('Contact.email')}:</strong>{" "}
               <a className="text-primary hover:underline" href="mailto:lkac@gmail.com">
                 lkac@gmail.com
               </a>
             </li>
-            <li><strong>Hours:</strong> Mon–Sat 9:00–18:00</li>
+            <li><strong>{t('Contact.hours')}:</strong> Mon–Sat 9:00–18:00</li>
             <li>
               <strong>WhatsApp:</strong>{" "}
               <a
@@ -74,7 +56,7 @@ export default function ContactPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Chat now
+                {t('Contact.chatNow')}
               </a>
             </li>
           </ul>
@@ -91,7 +73,7 @@ export default function ContactPage() {
           </div>
         </div>
         <div>
-          <h2 className="mb-4 text-2xl font-bold">Contact Form</h2>
+          <h2 className="mb-4 text-2xl font-bold">{t('Contact.contactForm')}</h2>
           <ContactForm />
         </div>
       </div>

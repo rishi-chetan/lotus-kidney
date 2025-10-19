@@ -1,19 +1,24 @@
+"use client"
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import schedule from "@/data/schedule.json"
+import { useI18n } from "@/components/providers/i18n-provider"
 
 export function ScheduleTable() {
+  const { t } = useI18n()
+  
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Doctor Availability</CardTitle>
+        <CardTitle>{t('Schedule.doctorAvailability')}</CardTitle>
       </CardHeader>
       <CardContent>
         <div className="w-full overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
               <tr className="text-left">
-                <th className="border-b p-2 font-semibold">Mode</th>
-                <th className="border-b p-2 font-semibold">Upcoming Slots</th>
+                <th className="border-b p-2 font-semibold">{t('Schedule.mode')}</th>
+                <th className="border-b p-2 font-semibold">{t('Schedule.upcomingSlots')}</th>
               </tr>
             </thead>
             <tbody>

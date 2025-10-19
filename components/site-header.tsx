@@ -4,22 +4,25 @@ import Link from "next/link"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
-import { ThemeToggle } from "./theme-toggle"
 import { Menu } from "lucide-react"
-
-const nav = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
-  { href: "/patient-info", label: "Patient Info" },
-  // { href: "/teleconsultation", label: "Teleconsult" }, // Coming Soon
-  { href: "/appointments", label: "Appointments" },
-  { href: "/blog", label: "Blog" },
-  { href: "/contact", label: "Contact" },
-]
+import { useI18n } from "@/components/providers/i18n-provider"
+import { LanguageToggle } from "./language-toggle"
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false)
+  const { t } = useI18n()
+
+  const nav = [
+    { href: "/", label: t('Navigation.home') },
+    { href: "/about", label: t('Navigation.about') },
+    { href: "/services", label: t('Navigation.services') },
+    { href: "/patient-info", label: t('Navigation.patientInfo') },
+    // { href: "/teleconsultation", label: "Teleconsult" }, // Coming Soon
+    { href: "/appointments", label: t('Navigation.appointments') },
+    { href: "/blog", label: t('Navigation.blog') },
+    { href: "/contact", label: t('Navigation.contact') },
+  ]
+  
   return (
     <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-0">
@@ -37,13 +40,13 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
-          <ThemeToggle />
+          <LanguageToggle />
           <Button asChild className="ml-2">
-            <Link href="/appointments">Book</Link>
+            <Link href="/appointments">{t('Navigation.book')}</Link>
           </Button>
         </nav>
         <div className="md:hidden flex items-center gap-2">
-          <ThemeToggle />
+          <LanguageToggle />
           <Button
             variant="ghost"
             className="px-2"
@@ -70,7 +73,7 @@ export function SiteHeader() {
           ))}
           <Button asChild className="w-full">
             <Link href="/appointments" onClick={() => setOpen(false)}>
-              Book Appointment
+              {t('Navigation.bookAppointment')}
             </Link>
           </Button>
         </div>

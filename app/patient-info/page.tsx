@@ -1,25 +1,13 @@
+"use client"
+
 import faqs from "@/data/faqs.json"
-// import forms from "@/data/forms.json"
 import { FAQAccordion } from "@/components/faq-accordion"
-import { Metadata } from "next"
 import { siteConfig } from "@/lib/seo-config"
 import { FAQSchema, BreadcrumbSchema } from "@/components/structured-data"
-
-export const metadata: Metadata = {
-  title: "Patient Information | First Visit Guide | Lotus Kidney & Andrology Center",
-  description: "Patient resources, FAQs, and first visit guide for Lotus Kidney & Andrology Center. Learn about preparation, insurance, and what to expect during your visit to our urology clinic in Hyderabad.",
-  keywords: [
-    "patient information urology",
-    "first visit urologist",
-    "urology FAQs",
-    "kidney specialist visit guide",
-  ],
-  alternates: {
-    canonical: `${siteConfig.url}/patient-info`,
-  },
-}
+import { useI18n } from "@/components/providers/i18n-provider"
 
 export default function PatientInfoPage() {
+  const { t } = useI18n();
   return (
     <>
       <FAQSchema faqs={faqs.map(faq => ({ question: faq.question, answer: faq.answer }))} />
@@ -30,29 +18,28 @@ export default function PatientInfoPage() {
         ]}
       />
       <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
-      <h1 className="mb-6 text-3xl font-bold w-fit">Patient Resources</h1>
+      <h1 className="mb-6 text-3xl font-bold w-fit">{t('PatientInfo.pageTitle')}</h1>
       <section className="grid gap-6 md:grid-cols-2">
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold">First Visit Guide</h2>
+          <h2 className="text-2xl font-bold">{t('PatientInfo.firstVisitGuide')}</h2>
           <ul className="list-inside list-disc text-muted-foreground">
-            <li>Arrive 10 minutes early for registration</li>
-            <li>Bring previous reports and medication list</li>
-            <li>Insurance card and identification</li>
+            <li>{t('PatientInfo.firstVisitItem1')}</li>
+            <li>{t('PatientInfo.firstVisitItem2')}</li>
+            <li>{t('PatientInfo.firstVisitItem3')}</li>
           </ul>
 
-          <h2 className="text-2xl font-bold">Procedure Preparation</h2>
+          <h2 className="text-2xl font-bold">{t('PatientInfo.procedurePreparation')}</h2>
           <p className="text-muted-foreground">
-            Follow your doctor’s instructions. For ultrasound or imaging, you may be asked to fast or hydrate
-            accordingly.
+            {t('PatientInfo.procedurePreparationText')}
           </p>
 
-          <h2 className="text-2xl font-bold">Insurance & Payment</h2>
+          <h2 className="text-2xl font-bold">{t('PatientInfo.insurancePayment')}</h2>
           <p className="text-muted-foreground">
-            We accept major insurance providers and offer transparent, upfront pricing for self-pay patients.
+            {t('PatientInfo.insurancePaymentText')}
           </p>
         </div>
         <div>
-          <h2 className="mb-4 text-2xl font-bold">FAQs</h2>
+          <h2 className="mb-4 text-2xl font-bold">{t('PatientInfo.faqs')}</h2>
           <FAQAccordion faqs={faqs} />
         </div>
       </section>
