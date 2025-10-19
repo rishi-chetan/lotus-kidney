@@ -72,9 +72,9 @@ export const metadata: Metadata = {
     icon: "/LOTUS-LOGO.png",
     apple: "/LOTUS-LOGO.png",
   },
+  // google-site-verification
   verification: {
-    // Add these later from Google Search Console
-    // google: "your-google-verification-code",
+    google: "RE4uAPKhl0-TqTKY6ckx5l9h9zKK-qGeFxrV8M6lguo",
   },
 }
 
