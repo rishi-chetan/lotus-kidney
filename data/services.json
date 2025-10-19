@@ -1,50 +1,82 @@
 [
   {
     "id": "svc1",
-    "title": "Kidney Stone Management",
-    "category": "Nephrology",
-    "shortDescription": "Diagnosis and minimally invasive treatment for kidney stones.",
-    "fullDescription": "We evaluate stone composition, provide pain control, and use evidence-based approaches including hydration plans, medical expulsive therapy, and referrals for ESWL/URS when necessary.",
-    "tags": ["stones", "nephrology", "pain"]
-  },
-  {
-    "id": "svc2",
-    "title": "Chronic Kidney Disease (CKD) Care",
-    "category": "Nephrology",
-    "shortDescription": "Comprehensive management for CKD stages 1–5.",
-    "fullDescription": "Dietary counseling, medication optimization, risk factor control (BP, sugar), and dialysis planning when appropriate. Regular monitoring to slow disease progression.",
-    "tags": ["CKD", "diet", "hypertension"]
+    "title": "Kidney Stone Treatment",
+    "category": "Urology",
+    "shortDescription": "Advanced kidney stone treatment including laser procedures.",
+    "fullDescription": "Comprehensive evaluation and treatment for all types of kidney stones. We offer minimally invasive laser treatments (RIRS), ESWL, PCNL, and medical management. Available treatment modes: Endourology, Open, Laparoscopic, and Robotic surgeries. Our approach focuses on pain relief, stone removal, and prevention strategies to reduce recurrence.",
+    "tags": ["kidney stones", "laser treatment", "minimally invasive"]
   },
   {
     "id": "svc3",
-    "title": "Male Fertility & Andrology",
-    "category": "Andrology",
-    "shortDescription": "Assessment and treatment for male fertility concerns.",
-    "fullDescription": "We investigate semen parameters, hormonal profiles, and lifestyle factors. Care plans include medical management, counseling, and referrals for advanced reproductive techniques.",
-    "tags": ["fertility", "andrology"]
+    "title": "Urinary Tract Infections (UTI)",
+    "category": "Urology",
+    "shortDescription": "Effective treatment and prevention of urinary infections.",
+    "fullDescription": "Comprehensive care for acute and recurrent urinary tract infections. We use targeted antibiotic therapy, identify underlying causes, and provide preventive strategies to reduce recurrence and complications.",
+    "tags": ["UTI", "infection", "antibiotics"]
   },
   {
     "id": "svc4",
-    "title": "Prostate Health",
+    "title": "Prostate Problem Treatment",
     "category": "Urology",
-    "shortDescription": "Evaluation and management of BPH and prostate conditions.",
-    "fullDescription": "Assessment includes symptom scoring, PSA evaluation, imaging when needed, and shared decision-making about medical or procedural interventions.",
-    "tags": ["prostate", "BPH"]
+    "shortDescription": "Complete prostate care including BPH and prostate disorders.",
+    "fullDescription": "Management of benign prostatic hyperplasia (BPH), prostatitis, and other prostate conditions. Treatment options include medications, minimally invasive procedures, and surgical interventions based on severity and patient preference. Available surgical modes: Endourology, Open, Laparoscopic, and Robotic surgeries.",
+    "tags": ["prostate", "BPH", "prostatitis"]
   },
   {
     "id": "svc5",
-    "title": "Urinary Tract Infections (UTI)",
-    "category": "Urology",
-    "shortDescription": "Timely diagnosis and treatment for UTIs.",
-    "fullDescription": "We use targeted antibiotic therapy based on local resistance patterns and provide preventive strategies to reduce recurrence.",
-    "tags": ["UTI", "urology"]
+    "title": "Male Sexual Health",
+    "category": "Andrology",
+    "shortDescription": "Specialized treatment for male sexual health concerns.",
+    "fullDescription": "Comprehensive evaluation and treatment for premature ejaculation, erectile dysfunction, male infertility, and penile curvature (Peyronie's disease). We offer medical management, counseling, and surgical correction when needed.",
+    "tags": ["erectile dysfunction", "premature ejaculation", "male infertility", "sexual health"]
   },
   {
     "id": "svc6",
-    "title": "Hypertension & Kidney Risk",
-    "category": "Nephrology",
-    "shortDescription": "Blood pressure optimization for kidney protection.",
-    "fullDescription": "Medication review, lifestyle guidance, and monitoring to protect kidney function and cardiovascular health.",
-    "tags": ["hypertension", "risk", "kidney"]
+    "title": "Circumcision Surgery",
+    "category": "Urology",
+    "shortDescription": "Safe circumcision procedures for all ages.",
+    "fullDescription": "Expert circumcision surgery performed with modern techniques ensuring minimal discomfort and quick recovery. Available for infants, children, and adults with proper anesthesia and post-operative care.",
+    "tags": ["circumcision", "surgery", "pediatric"]
+  },
+  {
+    "id": "svc2",
+    "title": "Urine Leak Treatment",
+    "category": "Urology",
+    "shortDescription": "Expert management of urinary leakage and incontinence.",
+    "fullDescription": "Diagnosis and treatment of urine leakage issues including stress incontinence, urge incontinence, and post-surgical complications. We provide both medical and surgical solutions tailored to each patient's needs.",
+    "tags": ["incontinence", "urine leak", "bladder control"]
+  },
+  {
+    "id": "svc8",
+    "title": "Uro-Oncology Services",
+    "category": "Uro-Oncology",
+    "shortDescription": "Comprehensive cancer care for urological malignancies.",
+    "fullDescription": "Advanced diagnosis and management of kidney cancer, bladder cancer, and prostate cancer. We provide surgical treatment, coordinate with oncologists for chemotherapy/radiation, and offer surveillance protocols for early-stage cancers. Available surgical modes: Endourology, Open, Laparoscopic, and Robotic surgeries.",
+    "tags": ["cancer", "kidney cancer", "bladder cancer", "prostate cancer", "oncology"]
+  },
+  {
+    "id": "svc9",
+    "title": "Reconstructive Urology",
+    "category": "Reconstructive Urology",
+    "shortDescription": "Advanced reconstructive procedures for complex urological conditions.",
+    "fullDescription": "Specialized surgical reconstruction including urethral stricture repair with buccal mucosal grafts, bladder reconstruction, and repair of complex urological injuries. We use advanced microsurgical techniques for optimal outcomes. Available surgical modes: Endourology, Open, Laparoscopic, and Robotic surgeries.",
+    "tags": ["reconstruction", "urethral stricture", "buccal graft", "microsurgery"]
+  },
+  {
+    "id": "svc7",
+    "title": "Pediatric Urology",
+    "category": "Pediatric Urology",
+    "shortDescription": "Specialized urological care for children.",
+    "fullDescription": "Expert management of urinary issues in children including bedwetting, urinary tract infections, congenital abnormalities, and voiding dysfunction. We provide family-centered care with a focus on minimally invasive approaches. Available surgical modes: Endourology, Open, Laparoscopic, and Robotic surgeries.",
+    "tags": ["pediatric", "children", "bedwetting", "UTI"]
+  },
+  {
+    "id": "svc10",
+    "title": "Renal Transplantation",
+    "category": "Transplant Surgery",
+    "shortDescription": "Expert kidney transplantation services for end-stage renal disease.",
+    "fullDescription": "Comprehensive renal transplantation program including pre-transplant evaluation, living donor and deceased donor transplants, and post-transplant care. We provide complete support throughout the transplant journey with advanced surgical techniques and long-term follow-up. Available surgical modes: Open, Laparoscopic, and Robotic surgeries.",
+    "tags": ["kidney transplant", "renal transplant", "transplant surgery", "ESRD"]
   }
 ]

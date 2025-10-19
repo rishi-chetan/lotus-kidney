@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import doctors from "@/data/doctors.json"
 
 export function Hero() {
   return (
@@ -10,15 +11,27 @@ export function Hero() {
             Kidney, Urology, and Andrology Care You Can Trust
           </h1>
           <p className="text-pretty text-muted-foreground md:text-lg">
-            Evidence-based treatment with compassion. In-clinic and online consultations available.
+            Evidence-based treatment with compassion. In-clinic consultations available.
           </p>
+          
+          <div className="space-y-4 pt-4">
+            <div>
+              <h3 className="text-xl font-semibold">{doctors[0].name}</h3>
+              <p className="text-sm text-muted-foreground whitespace-pre-line">{doctors[0].qualifications}</p>
+            </div>
+          </div>
+
           <div className="flex flex-wrap gap-3">
             <Button asChild size="lg">
               <Link href="/appointments">Book Appointment</Link>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <Link href="/teleconsultation">Teleconsultation</Link>
+              <Link href="/about">About Doctor</Link>
             </Button>
+            {/* Teleconsultation - Coming Soon */}
+            {/* <Button asChild size="lg" variant="outline">
+              <Link href="/teleconsultation">Teleconsultation</Link>
+            </Button> */}
           </div>
         </div>
         <div className="relative">

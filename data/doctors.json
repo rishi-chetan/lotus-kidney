@@ -1,26 +1,20 @@
 [
   {
     "id": "dr1",
-    "name": "Dr. Aisha Verma",
-    "qualifications": "MD (Internal Medicine), DM (Nephrology)",
-    "specialties": ["CKD", "Hypertension", "Kidney Stones"],
-    "bio": "Experienced nephrologist with a focus on preventive care and patient education.",
-    "photo": "/placeholder.svg?height=96&width=96"
-  },
-  {
-    "id": "dr2",
-    "name": "Dr. Rohan Mehta",
-    "qualifications": "MS (General Surgery), MCh (Urology)",
-    "specialties": ["Prostate Health", "UTI", "Minimally Invasive Urology"],
-    "bio": "Urologist with expertise in minimally invasive procedures and collaborative care.",
-    "photo": "/placeholder.svg?height=96&width=96"
-  },
-  {
-    "id": "dr3",
-    "name": "Dr. Neel Joshi",
-    "qualifications": "MS, Fellowship (Andrology)",
-    "specialties": ["Andrology", "Male Fertility"],
-    "bio": "Andrology specialist supporting couples with evidence-based fertility plans.",
-    "photo": "/placeholder.svg?height=96&width=96"
+    "name": "Dr. Nitesh Battala",
+    "qualifications": "MBBS, MS (General Surgery), DrNB (Urology - KIMS Hospital)\nConsultant in Mediciti Group of Hospitals",
+    "specialties": [
+      "Kidney Stones & Laser Treatment",
+      "Urinary Issues & Infections",
+      "Prostate Care",
+      "Male Sexual Health",
+      "Male Infertility",
+      "Circumcision",
+      "Pediatric Urology",
+      "Uro-Oncology",
+      "Reconstructive Urology"
+    ],
+    "bio": "Expert urologist dedicated to providing comprehensive kidney and urological care with advanced treatment options, including laser procedures and reconstructive surgery, in a compassionate and patient-centered environment.",
+    "photo": "/bablu.png"
   }
 ]

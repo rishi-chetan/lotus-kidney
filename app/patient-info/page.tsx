@@ -1,5 +1,5 @@
 import faqs from "@/data/faqs.json"
-import forms from "@/data/forms.json"
+// import forms from "@/data/forms.json"
 import { FAQAccordion } from "@/components/faq-accordion"
 
 export const metadata = {
@@ -9,7 +9,7 @@ export const metadata = {
 export default function PatientInfoPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
-      <h1 className="mb-6 text-3xl font-bold">Patient Resources</h1>
+      <h1 className="mb-6 text-3xl font-bold w-fit">Patient Resources</h1>
       <section className="grid gap-6 md:grid-cols-2">
         <div className="space-y-4">
           <h2 className="text-2xl font-bold">First Visit Guide</h2>
@@ -36,7 +36,8 @@ export default function PatientInfoPage() {
         </div>
       </section>
 
-      <section className="mt-12">
+      {/* Downloadable Forms - Coming Soon */}
+      {/* <section className="mt-12">
         <h2 className="mb-3 text-2xl font-bold">Downloadable Forms</h2>
         <ul className="grid gap-3 md:grid-cols-2">
           {forms.map((f) => (
@@ -48,7 +49,7 @@ export default function PatientInfoPage() {
             </li>
           ))}
         </ul>
-      </section>
+      </section> */}
     </div>
   )
 }

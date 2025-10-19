@@ -11,7 +11,7 @@ export default function TermsPage() {
         substitute for professional medical advice.
       </p>
       <h2>Appointments</h2>
-      <p>Appointment times are subject to confirmation. Teleconsultation requires stable internet.</p>
+      <p>Appointment times are subject to confirmation.</p>
       <h2>Liability</h2>
       <p>We strive for accuracy but make no warranties regarding content completeness.</p>
     </div>

@@ -3,7 +3,6 @@ import doctors from "@/data/doctors.json"
 import testimonials from "@/data/testimonials.json"
 import { Hero } from "@/components/hero"
 import { ServiceCard } from "@/components/cards/service-card"
-import { DoctorCard } from "@/components/cards/doctor-card"
 import { TestimonialCard } from "@/components/testimonial-card"
 import { ScheduleTable } from "@/components/schedule/schedule-table"
 import Link from "next/link"
@@ -17,6 +16,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+
       <section className="mx-auto max-w-6xl px-4 py-12 md:py-16">
         <div className="grid gap-6 md:grid-cols-2">
           <div className="space-y-4">
@@ -25,9 +25,6 @@ export default function HomePage() {
               Delivering compassionate, evidence-based kidney, urology, and andrology care with a focus on long-term
               wellbeing.
             </p>
-            <Button asChild>
-              <Link href="/about">Learn about us</Link>
-            </Button>
           </div>
           <ScheduleTable />
         </div>
@@ -44,20 +41,6 @@ export default function HomePage() {
           {services.slice(0, 6).map((s) => (
             <ServiceCard key={s.id} service={s} />
           ))}
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-4 py-12 md:py-16">
-        <h2 className="mb-6 text-2xl font-bold">Our Doctors</h2>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {doctors.slice(0, 3).map((d) => (
-            <DoctorCard key={d.id} doctor={d} />
-          ))}
-        </div>
-        <div className="mt-6">
-          <Button asChild variant="outline">
-            <Link href="/about">Meet the team</Link>
-          </Button>
         </div>
       </section>
 

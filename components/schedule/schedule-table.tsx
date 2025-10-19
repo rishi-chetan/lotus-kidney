@@ -12,15 +12,13 @@ export function ScheduleTable() {
           <table className="w-full text-sm">
             <thead>
               <tr className="text-left">
-                <th className="border-b p-2 font-semibold">Doctor</th>
                 <th className="border-b p-2 font-semibold">Mode</th>
                 <th className="border-b p-2 font-semibold">Upcoming Slots</th>
               </tr>
             </thead>
             <tbody>
               {schedule.map((row) => (
-                <tr key={`${row.doctor}-${row.mode}`} className="align-top">
-                  <td className="border-b p-2">{row.doctor}</td>
+                <tr key={row.mode} className="align-top">
                   <td className="border-b p-2 capitalize">{row.mode}</td>
                   <td className="border-b p-2">
                     <div className="flex flex-wrap gap-2">

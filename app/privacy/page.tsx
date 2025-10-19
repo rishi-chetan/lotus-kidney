@@ -15,7 +15,7 @@ export default function PrivacyPage() {
       <h2>Use of Information</h2>
       <p>Information is used to schedule and provide care. We do not sell your data.</p>
       <h2>Contact</h2>
-      <p>For privacy concerns, email care@lotuskidney.example.com.</p>
+      <p>For privacy concerns, email lkac@gmail.com.</p>
     </div>
   )
 }

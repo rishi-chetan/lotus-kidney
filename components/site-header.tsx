@@ -12,7 +12,7 @@ const nav = [
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/patient-info", label: "Patient Info" },
-  { href: "/teleconsultation", label: "Teleconsult" },
+  // { href: "/teleconsultation", label: "Teleconsult" }, // Coming Soon
   { href: "/appointments", label: "Appointments" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
@@ -22,10 +22,10 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false)
   return (
     <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-0">
         <Link href="/" className="flex items-center gap-2 font-semibold">
-          <span className="inline-block h-6 w-6 rounded-full bg-primary/90" aria-hidden />
-          <span className="text-pretty">Lotus Kidney & Andrology</span>
+          <img src="/logo.png" alt="Lotus Kidney & Andrology Logo" className="h-20 w-auto" />
+          <span className="text-pretty">Lotus Kidney & Andrology Center</span>
         </Link>
         <nav className="hidden items-center gap-1 md:flex">
           {nav.map((item) => (
