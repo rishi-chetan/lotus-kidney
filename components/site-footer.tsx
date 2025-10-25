@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { useI18n } from "@/components/providers/i18n-provider"
+import { siteConfig } from "@/lib/seo-config"
 
 export function SiteFooter() {
   const { t } = useI18n()
@@ -48,32 +49,32 @@ export function SiteFooter() {
             <li>
               <a 
                 className="hover:underline" 
-                href="https://maps.app.goo.gl/1FDGzNzzPgBuaPoF7"
+                href={siteConfig.links.googleMaps}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Uppal, Hyderabad, Telangana 500039
+                {siteConfig.contact.address.full}
               </a>
             </li>
             <li>
-              <a className="hover:underline" href="tel:+917093070434">
+              <a className="hover:underline" href={`tel:${siteConfig.contact.phone}`}>
                 +91 70930 70434
               </a>
               {", "}
-              <a className="hover:underline" href="tel:+919502926710">
+              <a className="hover:underline" href={`tel:${siteConfig.contact.phone2}`}>
                 +91 95029 26710
               </a>
             </li>
             <li>
-              <a className="hover:underline" href="mailto:lkac@gmail.com">
-                lkac@gmail.com
+              <a className="hover:underline" href={`mailto:${siteConfig.contact.email}`}>
+                {siteConfig.contact.email}
               </a>
             </li>
             <li>Mon–Sat: 9:00–18:00</li>
             <li>
               <a
                 className="hover:underline"
-                href="https://wa.me/917093070434"
+                href={siteConfig.links.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
               >

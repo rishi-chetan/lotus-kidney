@@ -18,7 +18,7 @@ export function SiteHeader() {
     { href: "/services", label: t('Navigation.services') },
     { href: "/patient-info", label: t('Navigation.patientInfo') },
     // { href: "/teleconsultation", label: "Teleconsult" }, // Coming Soon
-    { href: "/appointments", label: t('Navigation.appointments') },
+    // { href: "/appointments", label: t('Navigation.appointments') },
     { href: "/blog", label: t('Navigation.blog') },
     { href: "/contact", label: t('Navigation.contact') },
   ]

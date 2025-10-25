@@ -24,11 +24,11 @@ export default function ContactPage() {
               <strong>{t('Contact.address')}:</strong>{" "}
               <a 
                 className="text-primary hover:underline" 
-                href="https://maps.app.goo.gl/1FDGzNzzPgBuaPoF7"
+                href={siteConfig.links.googleMaps}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Opp. Srinivasa Heights, West Balaji Hill Colony, Sai Nagar, Uppal, Hyderabad, Telangana 500039, India
+                {siteConfig.contact.address.full}
               </a>
             </li>
             <li>
@@ -49,7 +49,7 @@ export default function ContactPage() {
             </li>
             <li><strong>{t('Contact.hours')}:</strong> Mon–Sat 9:00–18:00</li>
             <li>
-              <strong>WhatsApp:</strong>{" "}
+              <strong>{t('Contact.whatsapp')}:</strong>{" "}
               <a
                 className="text-primary hover:underline"
                 href="https://wa.me/917093070434"

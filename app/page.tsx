@@ -51,7 +51,7 @@ export default function HomePage() {
         </div>
         <div className="mt-6">
           <Button asChild variant="outline">
-            <Link href="/testimonials">{t('Home.readMoreStories')}</Link>
+            <Link target="_blank" href="https://www.google.com/maps/place/Lotus+Kidney+Andrology+center+%7C+Dr.+Nitesh+Battala/@17.4116106,78.5646762,19z/data=!4m14!1m5!3m4!2zMTfCsDI0JzQwLjkiTiA3OMKwMzMnNTIuMiJF!8m2!3d17.4113611!4d78.5645!3m7!1s0x3bcb990b37604b77:0x6684fc2a647928c7!8m2!3d17.4114259!4d78.5645184!9m1!1b1!16s%2Fg%2F11y176lwx5?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D">{t('Home.readMoreStories')}</Link>
           </Button>
         </div>
       </section>

@@ -5,13 +5,14 @@ export const siteConfig = {
   ogImage: "https://www.lotuskidneyandrology.in/LOTUS-LOGO.png",
   links: {
     whatsapp: "https://wa.me/917093070434",
-    googleMaps: "https://maps.app.goo.gl/1FDGzNzzPgBuaPoF7",
+    googleMaps: "https://www.google.com/maps?ll=17.411426,78.564518&z=19&t=m&hl=en&gl=IN&mapclient=embed&cid=7387306547798943943",
   },
   contact: {
     email: "lkac@gmail.com",
     phone: "+917093070434",
     phone2: "+919502926710",
     address: {
+      full: "Opp. Srinivasa Heights, West Balaji Hill Colony, Sai Nagar, Uppal, Hyderabad, Telangana 500039, India",
       street: "Uppal",
       city: "Hyderabad",
       state: "Telangana",

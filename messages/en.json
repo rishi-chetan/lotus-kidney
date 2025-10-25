@@ -93,6 +93,7 @@
   "Appointments": {
     "pageTitle": "Book an Appointment",
     "pageDescription": "Schedule your consultation with Dr. Nitesh Battala. We offer in-clinic appointments and convenient scheduling.",
+    "description": "Schedule your consultation with Dr. Nitesh Battala. We offer in-clinic appointments and convenient scheduling.",
     "formTitle": "Schedule Your Visit",
     "formDescription": "Fill out the form below and we'll confirm your appointment via phone or WhatsApp.",
     "name": "Full Name",
@@ -132,7 +133,10 @@
     "clinicHours": "Clinic Hours",
     "hours": "6:00 PM – 9:00 PM",
     "days": "Monday to Saturday",
-    "emergencyNote": "For emergencies, please call immediately"
+    "emergencyNote": "For emergencies, please call immediately",
+    "chatNow": "Chat Now",
+    "contactForm": "Send us a Message",
+    "whatsapp": "WhatsApp"
   },
   "Testimonials": {
     "pageTitle": "Patient Testimonials",
@@ -143,14 +147,29 @@
     "pageTitle": "Health Blog",
     "pageDescription": "Expert insights on kidney health, urology, and andrology from Dr. Nitesh Battala.",
     "latestArticles": "Latest Articles",
+    "heading": "Articles & Education",
     "readMore": "Read more",
     "backToBlog": "Back to Blog",
     "relatedArticles": "Related Articles"
   },
   "Links": {
     "pageTitle": "Quick Links",
+    "heading": "Lotus Kidney & Andrology Links",
     "usefulLinks": "Useful Links",
     "externalResources": "External Resources"
+  },
+  "Teleconsultation": {
+    "pageTitle": "Teleconsultation",
+    "description": "Connect with our specialists from the comfort of your home. Secure video calls with privacy and care.",
+    "howItWorks": "How it works",
+    "step1": "Book an appointment and choose Teleconsultation",
+    "step2": "Receive a secure video link by email/WhatsApp",
+    "step3": "Join at your scheduled time",
+    "technicalRequirements": "Technical requirements",
+    "requirement1": "Reliable internet connection",
+    "requirement2": "Smartphone or computer with camera",
+    "requirement3": "Quiet, well-lit space",
+    "bookNow": "Book a teleconsultation →"
   },
   "Footer": {
     "tagline": "Compassionate care in urology, and andrology.",
@@ -206,6 +225,44 @@
     "invalidPhone": "Please enter a valid phone number",
     "minLength": "Must be at least {min} characters",
     "maxLength": "Must be no more than {max} characters"
+  },
+  "Schedule": {
+    "doctorAvailability": "Doctor Availability",
+    "mode": "Mode",
+    "upcomingSlots": "Upcoming Slots"
+  },
+  "Forms": {
+    "notSelected": "Not selected",
+    "appointmentRequested": "Appointment Requested",
+    "thankYou": "Thank you",
+    "appointmentConfirmation": "Your appointment request for",
+    "withDoctor": "with Dr.",
+    "pendingConfirmation": "is pending confirmation. We'll contact you soon.",
+    "fullName": "Full Name",
+    "namePlaceholder": "Enter your name",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "phone": "Phone",
+    "preferredDateTime": "Preferred Date & Time",
+    "selectDateTime": "Select date and time",
+    "notes": "Additional Notes",
+    "notesPlaceholder": "Any specific concerns or questions?",
+    "submitting": "Submitting...",
+    "submitRequest": "Submit Request",
+    "messageSent": "Message Sent",
+    "thanks": "Thanks",
+    "getBackSoon": "we'll get back to you soon",
+    "name": "Name",
+    "message": "Message",
+    "messagePlaceholder": "Your message here...",
+    "sending": "Sending...",
+    "send": "Send Message"
+  },
+  "Terms": {
+    "pageTitle": "Terms of Service"
+  },
+  "Privacy": {
+    "pageTitle": "Privacy Policy"
   },
   "Common": {
     "loading": "Loading...",
